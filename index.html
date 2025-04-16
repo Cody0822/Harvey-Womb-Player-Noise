@@ -23,6 +23,7 @@
       font-size: 18px;
       cursor: pointer;
       border-radius: 8px;
+      margin: 10px;
     }
     button:hover {
       background-color: #45a049;
@@ -34,12 +35,17 @@
 </head>
 <body>
   <h1>🛌 Womb Noise for Sleep 🛌</h1>
-  <p>Click the button to start 8 hours of Harvey's Womb noise.</p>
-  <button onclick="document.getElementById('whiteNoise').play()">▶️ Play Harvey Womb Noise</button>
+  <p>Click play or pause below to control 8 hours of Harvey's Womb noise.</p>
+  
+  <button onclick="document.getElementById('whiteNoise').play()">▶️ Play</button>
+  <button onclick="document.getElementById('whiteNoise').pause()">⏸️ Pause</button>
 
   <audio id="whiteNoise" loop>
-    <source src="https://www.dropbox.com/scl/fi/d5dn9mdftno7z2btg53k7/Womb.Noise.7.5Hours.mp3.mp3?rlkey=mkhzc7bif67wnem9q08rrxmdf&st=hf09renx&raw=1" />
+    <source src="https://www.dropbox.com/scl/fi/d5dn9mdftno7z2btg53k7/Womb.Noise.7.5Hours.mp3.mp3?rlkey=mkhzc7bif67wnem9q08rrxmdf&st=hf09renx&raw=1" type="audio/mpeg" />
     Your browser does not support the audio tag.
   </audio>
+</body>
+</html>
+
 </body>
 </html>
